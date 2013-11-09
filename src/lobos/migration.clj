@@ -182,7 +182,7 @@
 
 (defn list-migrations []
   (if *reload-migrations*
-    (when (.exists (migrations-file))
+    (do
       (swap! migrations (constantly []))
       (use :reload *migrations-namespace*)
       @migrations)
