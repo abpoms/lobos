@@ -7,5 +7,4 @@
 ; You must not remove this notice, or any other, from this software.
 
 (ns lobos.connectivity
-  (:refer-clojure :exclude [defonce])
-  (:require [clojure.java.jdbc.internal :as sqlint]))
+  (:refer-clojure :exclude [defonce]))
